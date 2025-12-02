@@ -1,65 +1,40 @@
 class main extends Phaser.Scene {
-
     constructor() {
-        super({
-            key: 'main'
-        });
-
-        // Put global variable here
+        super("main");
     }
 
     preload() {
-
-        // Preload all the assets here
-
-        // Preload any images here
-
-        // Preload any sound and music here
-        // this.load.audio('ping', 'assets/ping.mp3');
-        // this.load.audio('bgMusic', 'assets/bgMusic.mp3');
+        // Load both images
+        this.load.image("menuScreen", "assets/menu.png");          // first screen
+        this.load.image("instructionsScreen", "assets/instructions.png"); // second screen
     }
 
     create() {
+        console.log("*** main scene");
 
-        console.log('*** main scene');
+        const centerX = this.cameras.main.width / 2;
+        const centerY = this.cameras.main.height / 2;
 
-        // Add any sound and music here
-        // ( 0 = mute to 1 is loudest )
-        //this.music = this.sound.add('bgMusic').setVolume(0.3) // 10% volume
+        // Start at MENU state
+        this.currentStage = "menu";
 
-        //this.music.play()
-        //window.music = this.music
+        // One image object that we reuse
+        this.screenImage = this.add
+            .image(centerX, centerY, "menuScreen")
+            .setOrigin(0.5);
 
+        // Press SPACE to progress
+        const spaceKey = this.input.keyboard.addKey("SPACE");
 
-        // Add image and detect spacebar keypress
-        //this.add.image(0, 0, 'main').setOrigin(0, 0);
-
-        // Check for spacebar or any key here
-        var spaceDown = this.input.keyboard.addKey('SPACE');
-
-        // On spacebar event, call the world scene        
-        spaceDown.on('down', function () {
-            console.log('Jump to world scene');
-
-            this.scene.start('world',
-                // Optional parameters
-                {
-
-                }
-            );
-        }, this);
-
-
-        // Add any text in the main page
-        this.add.text(90, 600, 'Press spacebar to continue', {
-            font: '30px Courier',
-            fill: '#FFFFFF'
+        spaceKey.on("down", () => {
+            if (this.currentStage === "menu") {
+                // Go to instructions screen
+                this.currentStage = "instructions";
+                this.screenImage.setTexture("instructionsScreen");
+            } else if (this.currentStage === "instructions") {
+                // Start the actual game
+                this.scene.start("world");
+            }
         });
-
-
-        // Create all the game animations here
-
     }
-
-
 }

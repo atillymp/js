@@ -38,7 +38,7 @@
                 {
                  "height":0,
                  "id":1,
-                 "name":"BG1",
+                 "name":"glove2",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -50,7 +50,7 @@
                 {
                  "height":0,
                  "id":2,
-                 "name":"G3",
+                 "name":"glove4",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -62,7 +62,7 @@
                 {
                  "height":0,
                  "id":3,
-                 "name":"b3",
+                 "name":"bottle3",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -74,7 +74,7 @@
                 {
                  "height":0,
                  "id":4,
-                 "name":"G2",
+                 "name":"glove2",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -86,7 +86,7 @@
                 {
                  "height":0,
                  "id":5,
-                 "name":"BG2",
+                 "name":"glove3",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -98,7 +98,7 @@
                 {
                  "height":0,
                  "id":6,
-                 "name":"b2",
+                 "name":"bottle2",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -110,7 +110,7 @@
                 {
                  "height":0,
                  "id":7,
-                 "name":"G1",
+                 "name":"glove1",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -122,7 +122,7 @@
                 {
                  "height":0,
                  "id":8,
-                 "name":"b1",
+                 "name":"bottle1",
                  "point":true,
                  "rotation":0,
                  "type":"",
@@ -130,6 +130,134 @@
                  "width":0,
                  "x":2454.04411764706,
                  "y":2426.47058823529
+                }, 
+                {
+                 "height":18.84375,
+                 "id":10,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Hello World",
+                     "wrap":true
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":80.234375,
+                 "x":-860.327161253281,
+                 "y":-718.083292322835
+                }, 
+                {
+                 "height":18.84375,
+                 "id":11,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Hello World",
+                     "wrap":true
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":80.234375,
+                 "x":2873.26863927165,
+                 "y":1670.36815124672
+                }, 
+                {
+                 "height":18.84375,
+                 "id":12,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Hello World",
+                     "wrap":true
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":80.234375,
+                 "x":2494.47858817371,
+                 "y":1490.94229105972
+                }, 
+                {
+                 "height":18.84375,
+                 "id":13,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Hello World",
+                     "wrap":true
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":80.234375,
+                 "x":2414.3620550346,
+                 "y":1578.3421453933
+                }, 
+                {
+                 "height":18.84375,
+                 "id":14,
+                 "name":"",
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Hello World",
+                     "wrap":true
+                    },
+                 "type":"",
+                 "visible":true,
+                 "width":80.234375,
+                 "x":-287.750108111799,
+                 "y":-468.271110251275
+                }, 
+                {
+                 "height":0,
+                 "id":15,
+                 "name":"enemy1",
+                 "point":true,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1432.45341614907,
+                 "y":1572.2049689441
+                }, 
+                {
+                 "height":0,
+                 "id":16,
+                 "name":"enemy2",
+                 "point":true,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1626.55279503106,
+                 "y":788.04347826087
+                }, 
+                {
+                 "height":0,
+                 "id":17,
+                 "name":"enemy3",
+                 "point":true,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1521.73913043478,
+                 "y":2258.74867444327
+                }, 
+                {
+                 "height":0,
+                 "id":18,
+                 "name":"enemy4",
+                 "point":true,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":832.449628844115,
+                 "y":901.378579003181
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -180,7 +308,7 @@
          "y":0
         }],
  "nextlayerid":9,
- "nextobjectid":9,
+ "nextobjectid":19,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
