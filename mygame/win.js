@@ -1,30 +1,30 @@
 class win extends Phaser.Scene {
-    constructor() {
-        super("win");
-    }
+  constructor() {
+    super("win");
+  }
 
-    preload() {
-        // optional: win image
-        // this.load.image("winScreen", "assets/win.png");
-    }
+  preload() {
+    // Load your win image (change file name if needed)
+    this.load.image("winScreen", "assets/win.png");
+  }
 
-    create() {
-        console.log("*** WIN SCREEN");
+  create() {
+    console.log("*** WIN SCENE ***");
 
-        let centerX = this.cameras.main.width / 2;
-        let centerY = this.cameras.main.height / 2;
+    // Show the win image fullscreen
+    this.add.image(0, 0, "winScreen").setOrigin(0, 0);
 
-        // simple win text
-        this.add.text(centerX, centerY, "YOU WIN!", {
-            font: "48px Arial",
-            fill: "#ffffff"
-        }).setOrigin(0.5);
+    // Press ENTER (or SPACE) to restart the game
+    let enterKey = this.input.keyboard.addKey("ENTER");
 
-        // restart with SPACE
-        let spaceKey = this.input.keyboard.addKey("SPACE");
-        spaceKey.on("down", () => {
-            this.scene.start("main");
-        });
-    }
+    enterKey.on("down", () => {
+      window.heart  = 3;
+      window.bottle = 0;
+      window.glove  = 0;
+      window.needle = 0;
+      window.hasWon = false;
+
+      this.scene.start("world");
+    });
+  }
 }
-

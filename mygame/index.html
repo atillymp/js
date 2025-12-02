@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>HelpSnugy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Phaser -->
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.85.1/dist/phaser.min.js"></script>
 
-    <!-- Global scripts -->
+    <!-- Global helper functions -->
     <script src="globalFunctions.js"></script>
+
+    <!-- Scenes -->
+    <script src="main.js"></script>
+    <script src="world.js"></script>
+    <script src="world2.js"></script>
+    <script src="world3.js"></script>
     <script src="showInventory.js"></script>
     <script src="gameOver.js"></script>
     <script src="win.js"></script>
 
-    <!-- Scenes -->
-    <script src="main.js"></script>
-    <script src="instructions.js"></script>  
-    <script src="world.js"></script>
-    <script src="world2.js"></script>
-    <script src="world3.js"></script>
-
-    <!-- Game starter -->
+    <!-- Game config + start -->
     <script src="game.js"></script>
 
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            background: #000;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        canvas {
+            image-rendering: pixelated; /* makes your pixel art look crisp */
         }
     </style>
-
 </head>
 <body>
 </body>
